@@ -1,3 +1,4 @@
+/* CSS Reset */
 /*  1. Use a more-intuitive box-sizing model. */
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 *, *::before, *::after {
@@ -47,6 +48,7 @@ p, h1, h2, h3, h4, h5, h6 {
 /* TODO:
     don't forget to add shadow to card
     fix attribution styles
+    fix icons for value and days, flex is stretching them
 */
 body {
   background-color: hsl(217deg, 54%, 11%);
@@ -55,12 +57,86 @@ body {
   color: hsl(0deg, 0%, 100%);
 }
 
+main {
+  margin: 2rem 1rem;
+}
+
 .section_card {
   background-color: hsl(216deg, 50%, 16%);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+img {
+  border-radius: 0.5rem;
+}
+
+h1 {
+  margin-top: 1rem;
+}
+
+.p__description {
+  color: hsl(215deg, 51%, 70%);
+  margin-block: 0.5rem;
+}
+
+.div__product_stats {
+  display: flex;
+  gap: 5.3rem; /* fix this */
+  margin-block: 1rem;
+}
+
+.div__product_value {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.img__product_icon {
+  align-self: flex-start;
+  padding-top: 0.4rem;
+}
+
+.p__product_value {
+  color: hsl(178deg, 100%, 50%);
+}
+
+.div__product_days {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.img__product_days {
+  align-self: flex-start;
+  padding-top: 0.4rem;
+}
+
+.p__product_days {
+  color: hsl(215deg, 51%, 70%);
+}
+
+.div__creator {
+  border-top: 1px solid hsl(215deg, 32%, 27%);
+  display: flex;
 }
 
 .div__creator::before {
   content: "";
+}
+
+.img__avatar {
+  max-width: 15%;
+  margin-top: 1rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+}
+
+.p__creator {
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+}
+
+.span__color {
+  color: hsl(215deg, 51%, 70%);
 }
 
 footer {
