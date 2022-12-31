@@ -53,6 +53,59 @@
   $fw_400: 400;
   $fw_600: 600;
   $f_size: 1.125rem;
+  $ff: 'Outfit', sans-serif;
 
   /* Fonts */
   @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+  
+  /* TODO:
+      don't forget to add shadow to card
+      fix attribution styles
+  */
+  body {
+    background-color: $main_bg_dark_blue;
+    font-size: $f_size;
+    font-family: $ff;
+    color: $white;
+  }
+  
+  main {
+
+  }
+
+  .section_card {
+    background-color: $card_bg_dark_blue;
+  }
+
+  img {
+
+  }
+
+  h1 {
+
+  }
+
+  p {
+
+  }
+
+  .div__product_stats {
+
+  }
+
+  .div__creator {
+
+  }
+
+  .div__creator::before {
+    content: "";
+  }
+
+  .img__avatar {
+
+  }
+
+  footer {
+    margin-top: 2rem;
+  }

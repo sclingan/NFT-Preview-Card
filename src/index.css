@@ -43,4 +43,26 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* SASS Variables */
-/* Fonts *//*# sourceMappingURL=index.css.map */
+/* Fonts */
+/* TODO:
+    don't forget to add shadow to card
+    fix attribution styles
+*/
+body {
+  background-color: hsl(217deg, 54%, 11%);
+  font-size: 1.125rem;
+  font-family: "Outfit", sans-serif;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.section_card {
+  background-color: hsl(216deg, 50%, 16%);
+}
+
+.div__creator::before {
+  content: "";
+}
+
+footer {
+  margin-top: 2rem;
+}/*# sourceMappingURL=index.css.map */
