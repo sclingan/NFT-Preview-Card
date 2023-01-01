@@ -61,7 +61,10 @@
 
 
   /* TODO:
-      fix icons for value and days, flex is stretching them
+      fix icon spacing 
+      fix overlay image, make eye image brighter
+      fix background color seeping thru on borders
+      fix box shadow color? or leave it? maybe make it black and then cyan on hover??
   */
   body {
     background-color: $main_bg_dark_blue;
@@ -84,7 +87,6 @@
   .div__image_overlay {
     background-color: $cyan;
     border-radius: .5rem;
-    max-width: 70%;
   }
 
   .div__image_overlay:hover {
