@@ -61,10 +61,9 @@
 
 
   /* TODO:
+      add and test focus
       fix icon spacing 
       fix overlay image, make eye image brighter
-      fix background color seeping thru on borders
-      fix box shadow color? or leave it? maybe make it black and then cyan on hover??
   */
   body {
     background-color: $main_bg_dark_blue;
@@ -81,12 +80,15 @@
     background-color: $card_bg_dark_blue;
     border-radius: 1rem;
     padding: 1.5rem;
+  }
+
+  .section_card:hover {
     box-shadow: .2rem 1rem 1rem $line_dark_blue;
   }
 
   .div__image_overlay {
     background-color: $cyan;
-    border-radius: .5rem;
+    border-radius: .7rem;
   }
 
   .div__image_overlay:hover {
@@ -158,10 +160,6 @@
     display: flex;
   }
 
-  .div__creator::before {
-    content: "";
-  }
-
   .img__avatar {
     max-width: 15%;
     margin-top: 1rem;
@@ -186,7 +184,6 @@
   footer {
     margin-top: 2rem;
   }
-
 
   .attribution { 
     font-size: 11px; 
