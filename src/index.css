@@ -46,8 +46,6 @@ p, h1, h2, h3, h4, h5, h6 {
 /* SASS Variables */
 /* Fonts */
 /* TODO:
-    don't forget to add shadow to card
-    fix attribution styles
     fix icons for value and days, flex is stretching them
 */
 body {
@@ -65,14 +63,38 @@ main {
   background-color: hsl(216deg, 50%, 16%);
   border-radius: 1rem;
   padding: 1.5rem;
+  box-shadow: 0.2rem 1rem 1rem hsl(215deg, 32%, 27%);
+}
+
+.div__image_overlay {
+  background-color: hsl(178deg, 100%, 50%);
+  border-radius: 0.5rem;
+  max-width: 70%;
+}
+
+.div__image_overlay:hover {
+  background-image: url("../public/images/icon-view.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
 }
 
 img {
   border-radius: 0.5rem;
 }
 
+img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
 h1 {
   margin-top: 1rem;
+}
+
+h1:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
 }
 
 .p__description {
@@ -82,7 +104,7 @@ h1 {
 
 .div__product_stats {
   display: flex;
-  gap: 5.3rem; /* fix this */
+  gap: 5.3rem;
   margin-block: 1rem;
 }
 
@@ -135,10 +157,24 @@ h1 {
   padding-left: 1rem;
 }
 
+.p__creator:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+
 .span__color {
   color: hsl(215deg, 51%, 70%);
 }
 
 footer {
   margin-top: 2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
 }/*# sourceMappingURL=index.css.map */
