@@ -47,10 +47,8 @@ p, h1, h2, h3, h4, h5, h6 {
 /* Fonts */
 /* TODO:
     add and test focus
-    fix icon spacing 
     fix overlay image, make eye image brighter
     fix desktop layout , image container is bleeding thru
-    fix layout at 360px and lower
 */
 body {
   background-color: hsl(217deg, 54%, 11%);
