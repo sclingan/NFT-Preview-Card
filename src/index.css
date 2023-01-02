@@ -49,6 +49,8 @@ p, h1, h2, h3, h4, h5, h6 {
     add and test focus
     fix icon spacing 
     fix overlay image, make eye image brighter
+    fix desktop layout , image container is bleeding thru
+    fix layout at 360px and lower
 */
 body {
   background-color: hsl(217deg, 54%, 11%);
@@ -151,6 +153,7 @@ h1:hover {
   margin-top: 1rem;
   border: 1px solid hsl(0deg, 0%, 100%);
   border-radius: 50%;
+  align-self: flex-start;
 }
 
 .p__creator {
@@ -180,7 +183,7 @@ footer {
   color: hsl(228deg, 45%, 44%);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 26.875rem) {
   body {
     display: grid;
     place-content: center;
@@ -193,5 +196,10 @@ footer {
   }
   .div__product_stats {
     margin-block: 1rem;
+  }
+}
+@media (max-width: 23.25rem) {
+  .div__product_stats {
+    gap: 3rem;
   }
 }/*# sourceMappingURL=index.css.map */
