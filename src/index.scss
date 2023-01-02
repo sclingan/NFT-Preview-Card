@@ -73,13 +73,14 @@
   }
   
   main {
-    margin: 2rem 1rem;
+    // margin: 2rem 1rem;
+    margin: 2.5rem 1.5rem;
   }
 
   .section_card {
     background-color: $card_bg_dark_blue;
     border-radius: 1rem;
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
   .section_card:hover {
@@ -89,6 +90,7 @@
   .div__image_overlay {
     background-color: $cyan;
     border-radius: .7rem;
+    max-width: 36.87rem;
   }
 
   .div__image_overlay:hover {
@@ -124,7 +126,7 @@
   .div__product_stats {
     display: flex;
     gap: 5.3rem;  
-    margin-block: 1rem;
+    margin-block: .5rem;
   }
 
   .div__product_value {

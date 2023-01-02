@@ -58,13 +58,13 @@ body {
 }
 
 main {
-  margin: 2rem 1rem;
+  margin: 2.5rem 1.5rem;
 }
 
 .section_card {
   background-color: hsl(216deg, 50%, 16%);
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 .section_card:hover {
@@ -74,6 +74,7 @@ main {
 .div__image_overlay {
   background-color: hsl(178deg, 100%, 50%);
   border-radius: 0.7rem;
+  max-width: 36.87rem;
 }
 
 .div__image_overlay:hover {
@@ -109,7 +110,7 @@ h1:hover {
 .div__product_stats {
   display: flex;
   gap: 5.3rem;
-  margin-block: 1rem;
+  margin-block: 0.5rem;
 }
 
 .div__product_value {
