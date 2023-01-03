@@ -61,7 +61,6 @@
 
 
   /* TODO:
-      add and test focus
       fix overlay image, make eye image brighter
       fix desktop layout , image container is bleeding thru
   */
@@ -80,6 +79,7 @@
     background-color: $card_bg_dark_blue;
     border-radius: 1rem;
     padding: 1rem;
+    overflow: hidden;
   }
 
   .section_card:hover {
@@ -99,13 +99,18 @@
     background-size: 20%;
   }
 
-  img {
+  .img__product {
     border-radius: .5rem;
   }
 
-  img:hover {
+  .img__product:hover {
     cursor: pointer;
     opacity: 0.5;
+  }
+
+  a {
+    text-decoration: none;
+    color: $white;
   }
 
   h1 {
@@ -124,7 +129,7 @@
 
   .div__product_stats {
     display: flex;
-    gap: 5.3rem;  
+    gap: clamp(.5rem, 5.3rem, 6rem);
     margin-block: .5rem;
   }
 
@@ -174,9 +179,9 @@
     padding-left: 1rem;
   }
 
-  .p__creator:hover {
-    color: $cyan;
+  a:hover {
     cursor: pointer;
+    color: $cyan;
   }
 
   .span__color {
@@ -215,11 +220,4 @@
       margin-block: 1rem;
     }
 
-  }
-
-  @media (max-width: 23.25rem) {
-
-    .div__product_stats {
-      gap: clamp(.5rem, 3rem, 5rem);
-    }
   }
