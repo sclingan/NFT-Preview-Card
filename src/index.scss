@@ -60,10 +60,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
 
-  /* TODO:
-      fix overlay image, make eye image brighter
-      fix desktop layout , image container is bleeding thru
-  */
   body {
     background-color: $main_bg_dark_blue;
     font-size: $f_size;
@@ -85,13 +81,13 @@
   .section_card:hover {
     box-shadow: .2rem 1rem 1rem $line_dark_blue;
   }
-
+  /* Image container */
   .div__image_overlay {
     background-color: $cyan;
     border-radius: .7rem;
     max-width: 36.87rem;
   }
-
+  /* On hover show background image */
   .div__image_overlay:hover {
     background-image: url('../public/images/icon-view.svg');
     background-repeat: no-repeat;
@@ -102,7 +98,7 @@
   .img__product {
     border-radius: .5rem;
   }
-
+  /* On hover fade image and show background image */
   .img__product:hover {
     cursor: pointer;
     opacity: 0.5;
@@ -117,19 +113,14 @@
     margin-top: 1rem;
   }
 
-  h1:hover {
-    color: $cyan;
-    cursor: pointer;
-  }
-
   .p__description {
     color: $soft_blue;
     margin-block: .5rem;
   }
-
+  /* Use flexbox to position content */
   .div__product_stats {
     display: flex;
-    gap: clamp(.5rem, 5.3rem, 6rem);
+    justify-content: space-between;
     margin-block: .5rem;
   }
 
@@ -200,7 +191,7 @@
   .attribution a { 
     color: hsl(228, 45%, 44%); 
   }
-
+  /* Desktop use Grid to place card at center */
   @media (min-width: 26.875rem) {
 
     body {
