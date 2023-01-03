@@ -52,7 +52,7 @@ Users should be able to:
 ### What I learned
 
 Using React to learn more and push myself. I need to work more on SASS and use the cascade better. I learned more
-about naming conventions and also using SVG's. Layering images for hover effects was a challenge, I need more practive.
+about naming conventions and also using SVG's. Layering images for hover effects was a challenge, I need more practice.
 
 
 ### Continued development
